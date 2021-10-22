@@ -14,3 +14,11 @@
 @mixin flow {
   flex-flow: row wrap;
 }
+@mixin befor {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-image: url('../img/chevron.svg');
+}

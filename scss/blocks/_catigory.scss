@@ -1,0 +1,46 @@
+.hero__card-title{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: $text-bold;  
+  margin-bottom: 16px;
+}
+.hero__link{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: $green;  
+}
+.hero__item:not(:last-child){
+  margin-bottom: 12px;
+}
+.hero__btn{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  color: $text-bold;
+  display: inline-block;
+  position: relative;
+  @include text;
+  margin-top: 48px;
+  border-radius: 12px;
+  padding: 12px 34px 12px 13px;
+  background-color: $card-bg;
+}
+.hero__btn::after{
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  right: 14px;
+  top: 15px;
+  background-repeat: no-repeat;
+  background-image: url('../../img/icr.svg');
+
+}

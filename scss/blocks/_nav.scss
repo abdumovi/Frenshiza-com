@@ -1,0 +1,38 @@
+.nav{
+  padding: 16px 0;
+  background-color: $card-bg
+}
+.nav__list{
+  @include flex-b;
+
+}
+.nav__item{
+  position: relative;
+}
+.nav__link{
+  @include text;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: $text-bold;
+  position: relative;
+}
+.nav__link::after{
+  content: "";
+  width: 12px;
+  height: 12px; 
+  top: 6px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url('../../img/down.svg');
+}
+.nav__form{
+  display: none;
+}
+@media screen and (max-width:887px) {
+  .nav{
+    display: none;
+  }
+}

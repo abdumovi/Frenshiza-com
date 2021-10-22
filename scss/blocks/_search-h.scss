@@ -1,0 +1,173 @@
+.search{
+  padding: 40px 0;
+  @include flex-b;
+  flex-flow: wrap row;
+  &__form {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 42px;
+    background-color: $card-bg;
+    padding: 0 16px;
+    border-radius: 12px;
+  }
+  &__list {
+    position: relative;
+    padding-bottom: 16px;
+    top: 8px;
+  }
+  &__buton {
+    background-color: transparent;
+    border: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: $text-bold; 
+    cursor: pointer;
+    position: relative;
+    margin-right: 48px;
+    &::after{
+      @include befor;
+      top: 4px;
+      right: -13px;
+    }
+  }
+  &__item{
+    margin-left: 10px;
+    position: absolute;
+    top: 38px;
+    transition: all .4s ease;
+    padding-top: 9px;
+    opacity: 0;
+    transform: translate(0,24px)
+  }
+  
+  &__link {
+    @include text;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: $green;
+    
+    &:hover{
+      color: #4c5f3a;
+    }
+  }
+  &__user {
+    width: 24px;
+    height: 24px;
+    padding: 5px 5px;
+    margin-right: 40px;
+    position: relative;
+    top: -1px;
+    &::before{
+      content: "";
+      position: absolute;
+      right: -7px;
+      width: 24px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-image: url('../../img/user.svg');     
+    }
+  }
+  &__bag {
+    width: 24px;
+    height: 24px;
+    padding: 5px 5px;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      right: -7px;
+      width: 24px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-image: url('../../img/bag.svg');     
+    }
+    &::after{
+      content: "4";
+      color: #fff;
+      background-color: #E5704B;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      border-radius: 50%;
+      top: 16px;
+      left: -1px;
+    }
+  }
+}
+
+.search--item1{
+  top: 20px;
+}
+.search--item2{
+  top: 46px;
+}
+.search--item3{
+  top: 72px;
+  
+}
+.search--item4{
+  top: 82px;
+  top: 98px;
+}
+.search__list:hover .search__item{
+  z-index: 1;
+  opacity: 1;
+  transform: translate(0,8px)
+}
+.search__btn{
+  width: 16px;
+  height: 16px;
+  background-color: transparent; 
+  margin-left: 12px; 
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+.search__btn::after{
+  content: "";
+  width: 16px;
+  height: 16px;
+  left: 0px;
+  top: 0px;
+  right: 0;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url('../../img/icn.svg');
+}
+.search__input{
+  border: none;
+  padding: 8px;
+  max-width: 270px;
+  background-color: $card-bg;
+  outline-color: #dddcdc;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A9A9A9;
+}
+@media screen and (max-width:883px) {
+  .search__users{
+    display: none;
+  }
+  .search__form{
+    display: none;
+  }
+}
+@media screen and (max-width:815px) {
+  .search{
+    justify-content: center;
+  }
+  
+}

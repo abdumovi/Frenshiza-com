@@ -1,0 +1,92 @@
+.hero__card {
+  background-repeat: no-repeat;
+  background-image: url('../../img/banner.svg');
+  box-sizing: 729px;
+  border-radius: 12px;
+  padding: 48px 32px;
+}
+.hero__container{
+  padding: 64px 0;
+}
+
+
+
+
+
+.hero__text{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: $green; 
+  margin-bottom: 8px; 
+}
+.hero__title{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: $text-bold;
+  margin-bottom: 94px;
+}
+.card--btn{
+  margin-top: 0;
+  background-color: transparent;
+}
+.hero__container{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (max-width:1280px) {
+  .hero__content-el{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero__list{
+    display: flex;
+  }
+  .hero__btn{
+    margin-top: 0;
+  }
+  .hero__row{
+    flex-direction: column;
+  }
+  .hero__elements{
+    max-width: 100%;
+    margin-bottom: 32px;
+  }
+  .hero__item:not(:last-child){
+    margin-right: 12px;
+  }
+  
+}
+
+@media screen and (max-width:888px) {
+  .hero__container{
+    padding-top: 0;
+  }
+}
+@media screen and (max-width:803px) {
+  .hero__content-el{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero__list{
+    margin-bottom: 12px;
+  }
+  .hero__cards:not(:last-child){
+    margin-bottom: 32px;
+  }
+  
+}
+@media screen and (max-width:465px) {
+  .hero__list{
+    flex-direction: column;
+    text-align: center;
+  }
+}

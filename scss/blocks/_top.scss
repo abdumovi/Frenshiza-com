@@ -1,0 +1,61 @@
+.top {
+  padding: 16px 0;
+  border-bottom: 1px solid #F3F3F3;
+  @include flex-b;
+  flex-flow: row wrap;
+
+  &__links {
+    display: inline-block;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: $green;
+    @include text;
+  }
+  &__links:not(:last-child){
+    margin-right: 33px;
+  }
+  &__tel {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: $text-bold;  
+    @include text;
+    
+  }
+  &__tel:not(:last-child){
+    margin-right: 33px;
+  }
+}
+.top__menu{
+  display: none;
+}
+.top__btn{
+  background-color: transparent;
+  color: $green;
+  font-size: 40px;
+  border: none;
+}
+@media screen and (max-width:888px){
+  .top__email{
+    display: none;
+  }
+  .top__el2{
+    display: none;
+  }
+  .top__menu{
+    display: block;
+  }
+  
+  .top{
+    align-items: center;
+    position: relative;
+  }
+}
+
+
+
