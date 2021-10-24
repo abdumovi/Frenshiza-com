@@ -31,6 +31,45 @@
 .nav__form{
   display: none;
 }
+.nav__item{
+  position: relative;
+  cursor: pointer;
+}
+.nav__drop{
+  position: absolute;
+  padding-top: 40px;
+  top: -3px;
+  z-index: -1;
+}
+.nav__drop-item{
+  background-color: #fff;
+  width: 128px;
+  padding: 6px;
+  margin-left: 10px;
+  transform: translate(0, 24px);
+  position: relative;
+  z-index: -1;
+  opacity: 0;
+  transition: all .4s ease;
+}
+.nav__item:hover .nav__drop{
+  z-index: 1;
+}
+.nav__item:hover .nav__drop-item{
+  transform: translate(0, 0);
+  z-index: 1;
+  opacity: 1; 
+}
+.open1{
+  transform: translate(0, 0);
+  z-index: 1;
+  opacity: 1; 
+}
+.nav__drop-link{
+  @include link;
+}
+
+
 @media screen and (max-width:887px) {
   .nav{
     display: none;

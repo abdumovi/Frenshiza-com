@@ -22,3 +22,71 @@
   background-repeat: no-repeat;
   background-image: url('../img/chevron.svg');
 }
+@mixin link {
+  @include text;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: $green;
+  &:hover{
+    color: #4c5f3a;
+  }
+}
+@mixin product-title {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: $text-bold;
+    
+}
+@mixin product-text {
+  font-family: Open Sans;
+  font-size: 12px;
+  line-height: 16px;
+  color: $text-regular;  
+}
+@mixin slider-text {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: $text-bold;
+}
+@mixin card-btn {
+  background: #6A983C;
+  border: 2px solid #46760A;
+  box-sizing: border-box;
+  border-radius: 12px;  
+  padding: 6px 12px;
+  cursor: pointer;
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  color: #fff;
+  display: inline-block;
+}
+@mixin right {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  color: $text-bold; 
+  background-color: transparent;
+  border: none; 
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    top: 4px;
+    right: -22px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url('../../img/right.svg');
+  }
+}

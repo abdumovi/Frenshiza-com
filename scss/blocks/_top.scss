@@ -40,6 +40,9 @@
   font-size: 40px;
   border: none;
 }
+.top__bag{
+  display: none;
+}
 @media screen and (max-width:888px){
   .top__email{
     display: none;
@@ -47,10 +50,22 @@
   .top__el2{
     display: none;
   }
-  .top__menu{
+  
+  .top__bag{
+    display: block;
+    margin-top: 5px;
+    margin-right: 12px;
+  }
+  .top__bag .search__users{
     display: block;
   }
-  
+  .top__menu{
+    display: block;
+    display: flex;
+  }
+  .top__tel{
+    display: none;
+  }
   .top{
     align-items: center;
     position: relative;

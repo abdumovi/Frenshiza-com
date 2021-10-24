@@ -13,7 +13,9 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
-  color: $green;  
+  color: $green; 
+  @include link;
+  text-decoration: underline;
 }
 .hero__item:not(:last-child){
   margin-bottom: 12px;

@@ -1,0 +1,78 @@
+
+@media screen and (max-width:887px) {
+
+  .nav__form{
+    display: none;
+  }
+  .nav{
+    display: block;
+    background-color: transparent;
+    padding: 0;
+   
+  }
+  .nav__container{
+    position: relative;
+  }
+  .nav__all{
+    position: absolute;
+    right: 24px;
+    width: 56vw;
+    top: -185px;
+    overflow: hidden;
+    z-index: -1;
+  }
+  .nav__list{
+    top: 0;
+    flex-direction: column;
+    padding-top: 12px;
+  }
+  .nav__over{
+    margin-top: 51px;
+    background-color:#E4EED7;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    transform: translate(100%,0);
+    transition: transform .4s ease;
+  }
+  .nav__item{
+    margin-bottom: 12px;
+  }
+  .top__tele .top__tel{
+    display: block;
+  }
+  .top__email{
+    display: block;
+  }
+  .nav__form{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 12px;
+  }
+  .transform{
+    transform: translate(0,0);
+  }
+
+}
+.top__tell{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $text-bold;
+  @include text;  
+}
+.nav--drop{
+  right: -11px;
+}
+@media screen and (max-width:815px) {
+  .nav__over{
+    margin-top: 9px;
+  }
+}
+.hidden-over{
+  overflow: hidden;
+}

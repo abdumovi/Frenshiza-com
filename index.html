@@ -13,6 +13,7 @@
 
 <body>
   <div class="wrapper">
+    <!-- mainheader -->
     <section id="site-header">
       <header class="site-header__all">
         <div class="site-header__container container">
@@ -20,7 +21,8 @@
             <div class="top__elements top__el1">
               <a class="top__links" href="#">Chat with us</a>
               <a class="top__tel" href="tel:+420336775664">+420 336 775 664</a>
-              <span class="top__email"><a class="top__tel" href="mailto:info@freshnesecom.com">info@freshnesecom.com</a></span>
+              <span class="top__email"><a class="top__tel"
+                  href="mailto:info@freshnesecom.com">info@freshnesecom.com</a></span>
             </div>
             <div class="top__elements  top__el2">
               <a class="top__links" href="#">Blog</a>
@@ -28,6 +30,12 @@
               <a class="top__links" href="#">Careers</a>
             </div>
             <div class="top__menu">
+              <div class="top__bag">
+                <div class="search__users">
+                  <a class="search__user" href="#"></a>
+                  <a class="search__bag" href="#"></a>
+                </div>
+              </div>
               <button class="top__btn"><i class='bx bx-menu'></i></button>
             </div>
           </div>
@@ -43,7 +51,7 @@
                 <li class="search__item search--item3"><a class="search__link" href="#">fish</a></li>
                 <li class="search__item search--item4"><a class="search__link" href="#">Drinks</a></li>
               </ul>
-              <label><input class="search__input" type="text" placeholder="Search Products, categories ..."></label>
+              <label><input class="search__input" type="search" placeholder="Search Products, categories ..."></label>
               <button class="search__btn"></button>
             </form>
             <div class="search__users">
@@ -54,38 +62,94 @@
         </div>
         <nav class="site-header__nav nav">
           <div class="nav__container container">
-            <ul class="nav__list">
-              <li class="nav__item"><a class="nav__link" href="#">Bakery</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">Fruit and vegetables</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">Meat and fish</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">Drinks</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">Kitchen</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">Special nutrition</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">Baby</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">Pharmacy</a></li>
-            </ul>
-            <div class="nav__form">
-              <form class="search__form" action="#" method="post">
-                <ul class="search__list">
-                  <li class="search__drop"><button class="search__buton">All categories </button></li>
-                  <li class="search__item search--item1"><a class="search__link" href="#">Bakery</a></li>
-                  <li class="search__item search--item2"><a class="search__link" href="#">Meat</a></li>
-                  <li class="search__item search--item3"><a class="search__link" href="#">fish</a></li>
-                  <li class="search__item search--item4"><a class="search__link" href="#">Drinks</a></li>
+            <div class="nav__all">
+              <div class="nav__over">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Bakery</a>
+                    <ul class="nav__drop">
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">Bakery</a></li>
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">Meat</a></li>
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">fish</a></li>
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">Drinks</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Fruit and vegetables</a>
+                    <ul class="nav__drop">
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">Bakery</a></li>
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">Meat</a></li>
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">fish</a></li>
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">Drinks</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Meat and fish</a>
+                    <ul class="nav__drop">
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">Bakery</a></li>
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">Meat</a></li>
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">fish</a></li>
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">Drinks</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Drinks</a>
+                    <ul class="nav__drop">
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">Bakery</a></li>
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">Meat</a></li>
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">fish</a></li>
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">Drinks</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Kitchen</a>
+                    <ul class="nav__drop">
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">Bakery</a></li>
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">Meat</a></li>
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">fish</a></li>
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">Drinks</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Special nutrition</a>
+                    <ul class="nav__drop">
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">Bakery</a></li>
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">Meat</a></li>
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">fish</a></li>
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">Drinks</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Baby</a>
+                    <ul class="nav__drop">
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">Bakery</a></li>
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">Meat</a></li>
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">fish</a></li>
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">Drinks</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Pharmacy</a>
+                    <ul class="nav__drop nav--drop">
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">Bakery</a></li>
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">Meat</a></li>
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">fish</a></li>
+                      <li class="nav__drop-item"><a class="nav__drop-link" href="#">Drinks</a></li>
+                    </ul>
+                  </li>
                 </ul>
-                <label><input class="search__input" type="text" placeholder="Search Products, categories ..."></label>
-                <button class="search__btn"></button>
-                <span class="top__email"><a class="top__tel" href="mailto:info@freshnesecom.com">info@freshnesecom.com</a></span>
-              </form>
-              <div class="search__users">
-                <a class="search__user" href="#"></a>
-                <a class="search__bag" href="#"></a>
+                <div class="nav__form">
+                  <span class="top__tele"><a class="top__tel" href="tel:+420336775664">+420 336 775 664</a></span>
+                  <span class="top__emaill"><a class="top__tell"
+                      href="mailto:info@freshnesecom.com">info@freshnesecom.com</a></span>
+                </div>
               </div>
             </div>
           </div>
         </nav>
       </header>
     </section>
+    <!-- hero -->
     <section id="hero">
       <div class="hero__container container">
         <div class="hero__row row">
@@ -125,7 +189,383 @@
         </div>
       </div>
     </section>
+    <main>
+      <!-- product -->
+      <section id="product">
+        <div class="products__container container">
+          <div class="products__row row">
+            <div class="products__item col-lg-3 col-xs-12">
+              <div class="products__elementss text-c">
+                <h3 class="hero__card-title">Best selling products</h3>
+                <ul class="hero__list products--lst">
+                  <li class="hero__item"><a class="hero__link" href="#">Kitchen</a></li>
+                  <li class="hero__item"><a class="hero__link" href="#">Meat and fish</a></li>
+                  <li class="hero__item"><a class="hero__link" href="#">Special nutrition</a></li>
+                  <li class="hero__item"><a class="hero__link" href="#">Pharmacy</a></li>
+                  <li class="hero__item"><a class="hero__link" href="#">Baby</a></li>
+                </ul>
+                <a class="hero__btn products__link" href="#">More categories</a>
+              </div>
+            </div>
+            <div class="products__item col-xs-12 col-lg-3 col-md-4 col-sm-4">
+              <div class="products__elements">
+                <div class="products__img"></div>
+                <h2 class="products__title">Product Title</h2>
+                <p class="products__text">Space for a small product description </p>
+                <div class="products__prises">
+                  <span class="products__prise">1.48 USD</span>
+                  <a class="products__btn" href="#">Buy now</a>
+                </div>
+              </div>
+            </div>
+            <div class="products__item col-xs-12 col-lg-3 col-md-4 col-sm-4">
+              <div class="products__elements">
+                <div class="products__img"><span class="products__sale">- 36 %</span></div>
+                <h2 class="products__title">Product Title</h2>
+                <p class="products__text">Space for a small product description </p>
+                <div class="products__prises">
+                  <div class="products__pris">
+                    <span class="products__prise">1.12 USD</span>
+                    <span class="products__sales">48.56</span>
+                  </div>
+                  <a class="products__btn" href="#">Buy now</a>
+                </div>
+              </div>
+            </div>
+            <div class="products__item col-xs-12 col-lg-3 col-md-4 col-sm-4">
+              <div class="products__elements">
+                <div class="products__img"><span class="products__sale">- 36 %</span></div>
+                <h2 class="products__title">Product Title</h2>
+                <p class="products__text">Space for a small product description </p>
+                <div class="products__prises">
+                  <div class="products__pris">
+                    <span class="products__prise">1.12 USD</span>
+                    <span class="products__sales">48.56</span>
+                  </div>
+                  <a class="products__btn" href="#">Buy now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- products -->
+      <section id="products">
+        <div class="products__container container">
+          <div class="products__row row">
+            <div class="products__item col-lg-3 col-xs-12">
+              <div class="products__elementss text-c">
+                <h3 class="hero__card-title">Best from Farmers</h3>
+                <ul class="hero__list products--lst">
+                  <li class="hero__item"><a class="hero__link" href="#">Carrots</a></li>
+                  <li class="hero__item"><a class="hero__link" href="#">Tomatoes</a></li>
+                  <li class="hero__item"><a class="hero__link" href="#">Potatoes</a></li>
+                  <li class="hero__item"><a class="hero__link" href="#">Chicken</a></li>
+                  <li class="hero__item"><a class="hero__link" href="#">Pork</a></li>
+                </ul>
+                <a class="hero__btn products__link" href="#">More categories</a>
+              </div>
+            </div>
+            <div class="products__item col-xs-12 col-lg-3 col-md-4 col-sm-4">
+              <div class="products__elements">
+                <div class="products__img"></div>
+                <h2 class="products__title">Product Title</h2>
+                <p class="products__text">Space for a small product description </p>
+                <div class="products__prises">
+                  <span class="products__prise">1.48 USD</span>
+                  <a class="products__btn" href="#">Buy now</a>
+                </div>
+              </div>
+            </div>
+            <div class="products__item col-xs-12 col-lg-3 col-md-4 col-sm-4">
+              <div class="products__elements">
+                <div class="products__img"><span class="products__sale">- 36 %</span></div>
+                <h2 class="products__title">Product Title</h2>
+                <p class="products__text">Space for a small product description </p>
+                <div class="products__prises">
+                  <div class="products__pris">
+                    <span class="products__prise">1.12 USD</span>
+                    <span class="products__sales">48.56</span>
+                  </div>
+                  <a class="products__btn" href="#">Buy now</a>
+                </div>
+              </div>
+            </div>
+            <div class="products__item col-xs-12 col-lg-3 col-md-4 col-sm-4">
+              <div class="products__elements">
+                <div class="products__img"><span class="products__sale">- 36 %</span></div>
+                <h2 class="products__title">Product Title</h2>
+                <p class="products__text">Space for a small product description </p>
+                <div class="products__prises">
+                  <div class="products__pris">
+                    <span class="products__prise">1.12 USD</span>
+                    <span class="products__sales">48.56</span>
+                  </div>
+                  <a class="products__btn" href="#">Buy now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- costmers -->
+      <section id="costmers">
+        <div class="costmers__all">
+          <div class="costmers__container container">
+            <h3 class="hero__card-title costmers--title">Our customers says</h3>
+            <button class="costmers__btn">Button</button>
+          </div>
+          <div class="costmers__left"></div>
+          <div class="costmers__right"></div>
+          <div class="costmers__row">
+            <div class="costmers__item">
+              <p class="costmers__text">“ This is an super space for your customers qoute. Don’t worry it works smooth
+                as pie. You will get all what you need by writiing a text here “</p>
+              <span class="costmers__name">Name and Surname</span>
+            </div>
+            <div class="costmers__item">
+              <p class="costmers__text">“ This is an super space for your customers qoute. Don’t worry it works smooth
+                as pie. You will get all what you need by writiing a text here “</p>
+              <span class="costmers__name">Name and Surname</span>
+            </div>
+            <div class="costmers__item">
+              <p class="costmers__text">“ This is an super space for your customers qoute. Don’t worry it works smooth
+                as pie. You will get all what you need by writiing a text here “</p>
+              <span class="costmers__name">Name and Surname</span>
+            </div>
+            <div class="costmers__item">
+              <p class="costmers__text">“ This is an super space for your customers qoute. Don’t worry it works smooth
+                as pie. You will get all what you need by writiing a text here “</p>
+              <span class="costmers__name">Name and Surname</span>
+            </div>
+            <div class="costmers__item">
+              <p class="costmers__text">“ This is an super space for your customers qoute. Don’t worry it works smooth
+                as pie. You will get all what you need by writiing a text here “</p>
+              <span class="costmers__name">Name and Surname</span>
+            </div>
+            <div class="costmers__item">
+              <p class="costmers__text">“ This is an super space for your customers qoute. Don’t worry it works smooth
+                as pie. You will get all what you need by writiing a text here “</p>
+              <span class="costmers__name">Name and Surname</span>
+            </div>
+            <div class="costmers__item">
+              <p class="costmers__text">“ This is an super space for your customers qoute. Don’t worry it works smooth
+                as pie. You will get all what you need by writiing a text here “</p>
+              <span class="costmers__name">Name and Surname</span>
+            </div>
+            <div class="costmers__item">
+              <p class="costmers__text">“ This is an super space for your customers qoute. Don’t worry it works smooth
+                as pie. You will get all what you need by writiing a text here “</p>
+              <span class="costmers__name">Name and Surname</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- head-line -->
+      <section id="head-line">
+        <div class="costmers__container container">
+          <h3 class="hero__card-title costmers--title">Section Headline</h3>
+          <button class="costmers__btn">Button</button>
+        </div>
+        <div class="head-line__container container">
+          <div class="head-line__row row">
+            <div class="products__item col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="products__elements head-line--el">
+                <div class="products__img"></div>
+                <h2 class="products__title">Product Title</h2>
+                <p class="products__text">Space for a small product description </p>
+                <div class="products__prises">
+                  <span class="products__prise">1.48 USD</span>
+                  <a class="products__btn" href="#">Buy now</a>
+                </div>
+              </div>
+            </div>
+            <div class="products__item col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="products__elements head-line--el">
+                <div class="products__img"></div>
+                <h2 class="products__title">Product Title</h2>
+                <p class="products__text">Space for a small product description </p>
+                <div class="products__prises">
+                  <span class="products__prise">1.48 USD</span>
+                  <a class="products__btn" href="#">Buy now</a>
+                </div>
+              </div>
+            </div>
+            <div class="products__item col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="products__elements head-line--el">
+                <div class="products__img"><span class="products__sale">- 36 %</span></div>
+                <h2 class="products__title">Product Title</h2>
+                <p class="products__text">Space for a small product description </p>
+                <div class="products__prises">
+                  <div class="products__pris">
+                    <span class="products__prise">1.12 USD</span>
+                    <span class="products__sales">48.56</span>
+                  </div>
+                  <a class="products__btn" href="#">Buy now</a>
+                </div>
+              </div>
+            </div>
+            <div class="products__item col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="products__elements head-line--el">
+                <div class="products__img"></div>
+                <h2 class="products__title">Product Title</h2>
+                <p class="products__text">Space for a small product description </p>
+                <div class="products__prises">
+                  <span class="products__prise">1.48 USD</span>
+                  <a class="products__btn" href="#">Buy now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Blog -->
+      <section id="blog">
+        <div class="blog__container container">
+          <div class="costmers__container">
+            <h3 class="hero__card-title costmers--title">Read our Blog posts</h3>
+            <button class="costmers__btn">Button</button>
+          </div>
+          <div class="blog__row">
+            <div class="blog__big-c">
+              <div class="blog__liner">
+                <span class="blog__sub-title">Dinner tips</span>
+                <div class="blog__element">
+                  <h3 class="blog__title">Our chef tips for a great and tasty dinner ready in 20 minutes</h3>
+                  <span class="blog__times">
+                    Author
+                    <time class="blog__time" datetime="2021-10-23">17. 6. 2020</time>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="blog__small">
+              <div class="blog__exsmal-c">
+                <div class="blog__eimg">
+                  <img src="./img/blogimg.jpg" alt="blog">
+                </div>
+                <span class="blog__sub-title">Dinner tips</span>
+                <h2 class="blog__inner-title">Which vegetable your family will love and want’s eat each day</h2>
+                <time class="blog__etime" datetime="2021-10-23"><span>Author</span> 15. 6. 2020</time>
+              </div>
+              <div class="blog__smal-c">
+                <ul class="blog__list">
+                  <li class="blog__item">
+                    <div class="blog__content">
+                      <p class="blog__text">Salat is kinda good start to your morning routines</p>
+                      <time class="blog__etime" datetime="2021-10-23"><span>Author</span> 15. 6. 2020</time>
+                    </div>
+                    <div class="blog__img">
+                      <img src="./img/food1.jpg" alt="food">
+                    </div>
+                  </li>
+                  <li class="blog__item">
+                    <div class="blog__content">
+                      <p class="blog__text">Salat is kinda good start to your morning routines</p>
+                      <time class="blog__etime" datetime="2021-10-23"><span>Author</span> 15. 6. 2020</time>
+                    </div>
+                    <div class="blog__img">
+                      <img src="./img/food2.jpg" alt="food">
+                    </div>
+                  </li>
+                  <li class="blog__item">
+                    <div class="blog__content">
+                      <p class="blog__text">Salat is kinda good start to your morning routines</p>
+                      <time class="blog__etime" datetime="2021-10-23"><span>Author</span> 15. 6. 2020</time>
+                    </div>
+                    <div class="blog__img">
+                      <img src="./img/food3.jpg" alt="food">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </div>
+  <footer id="site-footer">
+    <div class="site-footer__container container">
+      <div class="site-footer__link-block link-block">
+        <div class="link-block__row row">
+          <div class="link-block__elements col-xs-6 col-sm-3 col-md-3 col-lg-3">
+            <div class="link-block__block">
+              <h3 class="link-block__title">Get in touch</h3>
+              <ul class="link-block__list">
+                <li class="link-block__item"><a class="link-block__link" href="#">About Us</a></li>
+                <li class="link-block__item"><a class="link-block__link" href="#">Careers</a></li>
+                <li class="link-block__item"><a class="link-block__link" href="#">Press Releases</a></li>
+                <li class="link-block__item"><a class="link-block__link" href="#">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="link-block__elements col-xs-6 col-sm-3 col-md-3 col-lg-3">
+            <div class="link-block__block">
+              <h3 class="link-block__title">Connections</h3>
+              <ul class="link-block__list">
+                <li class="link-block__item"><a class="link-block__link" target="_blank" href="#">Facebook</a></li>
+                <li class="link-block__item"><a class="link-block__link" target="_blank" href="#">Twitter</a></li>
+                <li class="link-block__item"><a class="link-block__link" target="_blank" href="#">Instagram</a></li>
+                <li class="link-block__item"><a class="link-block__link" target="_blank" href="#">Youtube</a></li>
+                <li class="link-block__item"><a class="link-block__link" target="_blank" href="#">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="link-block__elements col-xs-6 col-sm-3 col-md-3 col-lg-3">
+            <div class="link-block__block">
+              <h3 class="link-block__title">Earnings</h3>
+              <ul class="link-block__list">
+                <li class="link-block__item"><a class="link-block__link" href="#">Become an Affiliate</a></li>
+                <li class="link-block__item"><a class="link-block__link" href="#">Advertise your product</a></li>
+                <li class="link-block__item"><a class="link-block__link" href="#">Sell on Market</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="link-block__elements col-xs-6 col-sm-3 col-md-3 col-lg-3">
+            <div class="link-block__block">
+              <h3 class="link-block__title">Account</h3>
+              <ul class="link-block__list">
+                <li class="link-block__item"><a class="link-block__link" href="#">Your account</a></li>
+                <li class="link-block__item"><a class="link-block__link" href="#">Returns Centre</a></li>
+                <li class="link-block__item"><a class="link-block__link" href="#">100 % purchase protection</a></li>
+                <li class="link-block__item"><a class="link-block__link" href="#">Chat with us</a></li>
+                <li class="link-block__item"><a class="link-block__link" href="#">Help</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="site-footer__tag-block tag-block">
+        <h3 class="link-block__title">Product tags</h3>
+        <div class="tag-block__row">
+          <a class="tag-block__link" href="#">Beans</a>
+          <a class="tag-block__link" href="#">Carrots</a>
+          <a class="tag-block__link" href="#">Apples</a>
+          <a class="tag-block__link" href="#">Garlic</a>
+          <a class="tag-block__link" href="#">Mushrooms</a>
+          <a class="tag-block__link" href="#">Tomatoes</a>
+          <a class="tag-block__link" href="#">Chilli peppers</a>
+          <a class="tag-block__link" href="#">Broccoli</a>
+          <a class="tag-block__link" href="#">Watermelons</a>
+          <a class="tag-block__link" href="#">Oranges</a>
+          <a class="tag-block__link" href="#">Bananas</a>
+          <a class="tag-block__link" href="#">Grapes</a>
+          <a class="tag-block__link" href="#">Lemons</a>
+          <a class="tag-block__link" href="#">Fresh food</a>
+          <a class="tag-block__link" href="#">Seo tag</a>
+          <a class="tag-block__link" href="#">Fish</a>
+          <a class="tag-block__link" href="#">Seo tag</a>
+          <a class="tag-block__link" href="#">Meat</a>
+          <a class="tag-block__link" href="#">Cherries</a>
+        </div>
+      </div>
+      <p class="site-footer__text">Copyright © 2020 petrbilek.com</p>
+    </div>
+  </footer>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/script.js"></script>
   <script src="js/main.js"></script>
 </body>
 

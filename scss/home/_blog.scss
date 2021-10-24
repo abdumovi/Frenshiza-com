@@ -1,0 +1,111 @@
+.blog__row{
+  display: flex;
+  flex-flow: row wrap;
+}
+.blog__big-c{
+  border-radius: 12px;
+  background-repeat: no-repeat;
+  background-image: url('../../img/big.jpg');
+  margin-bottom: 31px;
+}
+.blog__liner{
+  background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 50%);
+  max-width: 469px;
+  padding: 20px;
+  border-radius: 12px;
+  min-height: 388px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.blog__title{
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #fff;  
+}
+.blog__times{
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  display: inline-block;
+  margin-left: 42px;
+  margin-top: 16px;
+  position: relative;
+
+  &::before{
+    content: "";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: -40px;
+    top: -10px;
+    background-repeat: no-repeat;
+    background-image: url('../../img/arthor.png');
+  }
+}
+.blog__time{
+  margin-left: 16px;
+}
+.blog__sub-title{
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: $green;
+  background: #F4F8EC;
+  border-radius: 12px;
+  padding: 0 8px;
+}
+.blog__eimg{
+  border-radius: 12px; 
+  margin-bottom: 24px; 
+}
+.blog__exsmal-c{
+  max-width: 267px;
+}
+.blog__inner-title{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: $text-bold;
+  margin-top: 8px;
+  margin-bottom: 16px;  
+}
+.blog__etime{
+  font-family: Open Sans;
+  font-size: 12px;
+  line-height: 16px;
+  color: $text-bold;
+}
+.blog__item {
+  max-width: 369px;
+  display: flex;
+  align-items: center;
+}
+.blog__text{
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: $text-bold; 
+  max-width: 225px; 
+  margin-bottom: 16px;
+}
+.blog__img{
+  width: 96px;
+  height: 96px;
+  border-radius: 12px;
+  margin-left: 48px;  
+}
+.blog__exsmal-c{
+  margin: 0 31px;
+  margin-bottom: 31px;
+}
+.blog__row{
+  justify-content: center;
+}
+.blog__small{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
