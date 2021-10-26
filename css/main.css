@@ -878,6 +878,7 @@ p {
   line-height: 22px;
   color: #151515;
   position: relative;
+  z-index: 3;
 }
 
 .nav__link::after {

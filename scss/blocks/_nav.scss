@@ -18,6 +18,7 @@
   line-height: 22px;
   color: $text-bold;
   position: relative;
+  z-index: 3;
 }
 .nav__link::after{
   content: "";
