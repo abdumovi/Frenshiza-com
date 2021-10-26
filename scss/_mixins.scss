@@ -90,3 +90,28 @@
     background-image: url('../../img/right.svg');
   }
 }
+
+@mixin check {
+  width: 24px;
+  height: 24px;
+  left: -8px;
+  cursor: pointer;
+  background-color: $card-bg;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  border: 1px solid #D1D1D1; 
+}
+@mixin check-bx {
+  color: #fff;
+  opacity: 0;
+  font-size: 20px;
+}
+@mixin checked-span {
+  background-color: $green;
+}
+@mixin checked-bx {
+  opacity: 1;
+}

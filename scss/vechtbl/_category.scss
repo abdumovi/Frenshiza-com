@@ -1,0 +1,56 @@
+#fruit-categry{
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.fruit-categry__title{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: $text-bold;
+  margin-bottom: 16px;
+  
+}
+.fruit-categry__item{
+  font-family: Open Sans;
+  font-size: 14px;
+  line-height: 19px;
+  color: $text-bold;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.fruit-categry__num{
+  padding: 0 8px;
+  background: #F4F8EC;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: $green;
+  display: inline-block;
+}
+.fruit-categry__content{
+  margin-bottom: 48px;
+}
+.brand-checkbox{
+  margin-bottom: 14px;
+  margin-left: 8px;
+}
+.brands{
+  margin-bottom: 48px;
+}
+.raiting-checkbox{
+  margin-left: 8px;
+  margin-bottom: 19px;
+  position: relative;
+}
+.raiting-checkbox::after{
+  content: "";
+  width: 88px;
+  height: 16px;
+  right: 77px;
+  position:absolute;
+  background-repeat: no-repeat;
+  background-image: url('../../img/stars.svg');
+
+}
