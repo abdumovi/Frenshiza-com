@@ -34,6 +34,10 @@
   color: #fff;
   @include card-btn;
   @include text;
+
+  &:hover{
+    color: #fff;
+  }
 }
 .products__prises{
   display: flex;
