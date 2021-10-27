@@ -2622,4 +2622,64 @@ p {
 .fruit--card {
   margin-bottom: 48px;
 }
+
+#detail {
+  padding-bottom: 16px;
+}
+
+.detail__path {
+  font-family: Open Sans;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A9A9A9;
+  padding: 16px 0;
+}
+
+.detail__path span {
+  font-family: Open Sans;
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+}
+
+.detail__inner-block {
+  margin-top: 16px;
+}
+
+.detail__img {
+  background: #F9F9F9;
+  border-radius: 12px;
+  max-width: 569px;
+  max-height: 436px;
+  overflow: hidden;
+  position: relative;
+}
+
+.detail__img:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.detail__imgs {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.detail__spans {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+.detail__span {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6A983C;
+  background: #F4F8EC;
+  border-radius: 12px;
+  padding: 4px 10px;
+  margin-right: 12px;
+}
 /*# sourceMappingURL=main.css.map */

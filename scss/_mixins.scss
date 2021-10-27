@@ -115,3 +115,26 @@
 @mixin checked-bx {
   opacity: 1;
 }
+@mixin path {
+  font-family: Open Sans;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A9A9A9;  
+  padding: 16px 0;
+
+  & span{
+    font-family: Open Sans;
+    font-size: 12px;
+    line-height: 16px;
+    color: $text-bold;
+  }  
+}
+@mixin price {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration-line: line-through;
+  color: #A9A9A9;  
+}

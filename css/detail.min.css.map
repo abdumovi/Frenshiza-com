@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACCA,AAAA,OAAO,AAAA,CACL,cAAc,CAAE,IAAI,CACrB,AACD,AAAA,aAAa,AAAA,CACX,GAAG,CACJ",
+    "sources": [
+        "../scss/detail/detail.scss",
+        "../scss/detail/_caratons.scss"
+    ],
+    "names": [],
+    "file": "detail.min.css"
+}
