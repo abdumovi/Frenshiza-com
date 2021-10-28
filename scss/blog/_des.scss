@@ -1,0 +1,113 @@
+#des{
+  padding-top: 48px;
+  padding-bottom: 32px;
+}
+.des {
+  &__container{
+    display: flex;
+    justify-content: center;
+    @include flow;
+  }
+  &__tags {
+    max-width: 169px;
+    margin-right: 32px;
+  }
+  &__tag-title {
+    @include bold(18px,27px);
+    margin-bottom: 16px;
+  }
+  &__tag-block {
+    @include flow;
+    @include flex;
+  }
+
+  &__tag-span {
+    @include bold(12px,18px);
+    color: $green;
+    display: inline-block;
+    padding: 4px 10px;
+    background: #F4F8EC;
+    border-radius: 12px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+  &__tag-back {
+    @include bold(15px,22px);
+    margin-top: 54px;
+    position: relative;
+    margin-bottom: 32px;
+    &::before{
+      content: "";
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url('../../img/left.svg');
+      margin-right: 6px;
+
+    }
+  }
+}
+.des {
+
+		&__inner-text {
+      @include regular-black(17px,23px);
+      margin-bottom: 48px;
+      max-width: 569px;
+		}
+
+		&__inner-title {
+      @include bold(18px,27px);
+      margin-bottom: 12px;
+		}
+}
+.des {
+
+  &__socials {
+    @include flow;
+    @include flex;
+    align-items: baseline;
+  }
+  &__socials-title{
+    margin-right: 16px
+  }
+  &__socials-list {
+    @include flow;
+    @include flex;
+  }
+  &__socials-item {
+    margin-right: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__socials-link {
+    display: inline-block;
+    @include text;
+    @include bold(15px,22px);
+    padding: 6px 12px;
+    background-color: $card-bg;
+    border-radius: 12px;
+  }
+
+  &__socials-bx {
+    vertical-align: unset;
+    margin-right: 6px;
+  }
+}
+
+
+
+@include respon(809px){
+  .des__tag-back{
+    margin: 20px 0;
+  }
+  .des__container{
+    justify-content: start;
+  }
+  .des__tags{
+    max-width: 100%;
+  }
+  .more__title{
+    font-size: 25px;
+  }
+}

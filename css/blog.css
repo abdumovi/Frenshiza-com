@@ -1,0 +1,90 @@
+#more {
+  padding-bottom: 48px;
+}
+
+.more__img {
+  margin-top: 48px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  border-radius: 12px;
+  min-height: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.more__hero {
+  background-image: url("../../img/mor-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 480px;
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.more__item {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #A9A9A9;
+  margin-bottom: 12px;
+  margin-right: 32px;
+}
+
+.more__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 140%;
+  color: #fff;
+  max-width: 506px;
+  margin-left: 32px;
+}
+
+.more__items {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.more__inner-des {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.more__des {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.more__inner-des {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=blog.css.map */
