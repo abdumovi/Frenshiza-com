@@ -1,0 +1,196 @@
+#info{
+  padding-top: 16px;
+  padding-bottom: 40px;
+}
+
+.info {
+  &__form-block{
+    flex-grow: 1;
+  }
+  &__title {
+    @include bold(22px,33px);
+    margin-bottom: 4px;
+  }
+  &__grey-texts {
+    @include flex-b;
+    margin-bottom: 32px;
+    @include flow;
+  }
+  &__grey-text {
+    @include greys(12px,16px);
+	}
+
+  &__form-blocks{
+    @include flex;
+    @include flow;
+  }
+  &__form-lable {
+    @include flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 32px;
+    @include bold(12px,18px);
+  }
+
+  &__form-input {
+    width: 100%;
+    padding: 11px 21px;
+    background: #F9F9F9;
+    border: 1px solid #D1D1D1;
+    outline-color: #a19f9f;
+    border-radius: 12px;
+  }
+}
+.info__form-block:not(:last-child){
+  margin-right: 32px;
+}
+.info__form .reaply__form-inner-text{
+  max-width: 243px;
+  padding: 11px 16px;
+  margin-bottom: 64px;
+}
+.info__form .vechtbl__lable-check{
+  margin: 0;
+}
+
+.form-method {
+  margin-bottom: 64px;
+
+  &__block {
+    @include flex;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    background-color: $card-bg;
+    border-radius: 12px;
+    position: relative;
+
+  }
+
+
+  &__lable {
+    margin-right: 109px;
+    @include bold(12px,18px);
+  }
+
+  &__radio {
+    margin-right: 16px;
+    cursor: pointer;
+    position: relative;
+
+    &::before{
+      content: "";
+      width: 24px;
+      height: 24px;
+      top: -4px;
+      left: -4px;
+      position: absolute;
+      border-radius: 50%;
+      border: 1.5px solid #D1D1D1;
+      background-color: #fff;
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      width: 10px;
+      right: 0;
+      top: 3px;
+      height: 10px;
+      background-color: #fff;
+      border-radius: 50%;
+    }
+    &:checked::before{
+      background-color: $green;
+    }
+  }
+  &__text {
+    @include bold(12px,18px);
+  }
+
+  &__span {
+    color: $green;
+    margin-right: 4px;
+  }
+}
+.fedex{
+  position: relative;
+}
+.fedex::after{
+  content: "";
+  position: absolute;
+  width: 54px;
+  height: 16px;
+  right: 16px;
+  background-repeat: no-repeat;
+  background-image: url('../../img/fedex.svg');
+}
+.dhl{
+  position: relative; 
+}
+.dhl::after{
+  content: "";
+  position: absolute;
+  width: 93px;
+  height: 14px;
+  right: 16px;
+  background-repeat: no-repeat;
+  background-image: url('../../img/dhl.svg');  
+}
+.visa{
+  background-color: #fff;
+  position: relative;
+  padding: 0;
+}
+.form-payment__block{
+  display: block;
+}
+.form-payment__block:not(:last-child){
+  margin-bottom: 32px;
+}
+.visa::after{
+  content: "";
+  position: absolute;
+  width: 94px;
+  height: 20px;
+  right: 0;
+  background-repeat: no-repeat;
+  background-image: url('../../img/visa.svg');  
+}
+.form-payment{
+  border: 1px solid #D1D1D1;
+  border-radius: 12px; 
+  padding: 16px; 
+}
+.form-payment {
+
+  &__block {
+    @include flex-b;
+    @include flow;
+
+  }
+
+  &__inner-blocks {
+    max-width: 350px;
+    flex-grow: 1;
+  }
+
+  // .form-payment__lable
+
+  &__lable {
+  }
+
+  // .form-payment__input
+
+  &__input {
+    width: 100%;
+  }
+
+  // .form-payment__inner-block
+
+  &__inner-block {
+    display: flex;
+    max-width: 256px;
+  }
+}
+.small-input{
+  width: 120px;
+}
