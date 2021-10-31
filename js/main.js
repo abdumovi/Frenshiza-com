@@ -33,3 +33,5 @@ grdbtn.addEventListener('click',function(){
   
 })
 
+let num = 2;
+console.log(num);
