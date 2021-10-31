@@ -7,6 +7,17 @@ btn.addEventListener('click',function(){
   lst2.style.zIndex = "1";
   body.classList.toggle('hidden-over');
 })
+let radio = document.querySelectorAll('.radios');
+let form = document.querySelectorAll('.form-payment')
+
+
+form.forEach(el => {
+  el.addEventListener('click',function(){
+   el.classList.add('autos');
+      
+  });
+
+})
 let lstbtn = document.querySelector('.vegetables--btn-mar');
 let grdbtn = document.querySelector('.vechtbl--grid');
 let grid = document.querySelector('.grid');
@@ -21,3 +32,4 @@ grdbtn.addEventListener('click',function(){
   carlst.classList.add('elment-2'); 
   
 })
+

@@ -1,0 +1,57 @@
+.product-title__el .blog__liner{
+  max-width: 100%;
+}
+.product-title__el .blog__big-c{
+  background-size: cover;
+}
+.product-title__con{
+  margin-bottom: 48px;
+}
+.product-title__title{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+  margin-bottom: 8px;
+}
+.product-title__text{
+  font-family: Open Sans;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A9A9A9;
+  margin-bottom: 24px;
+}
+.product-title-links{
+  color:#A9A9A9;
+
+}
+.product-title-big{
+  padding-bottom: 48px;
+}
+.product-title-all{
+  padding-top: 48px;
+}
+.product-title-card{
+  margin-bottom: 30px;
+}
+.products__elementssa{
+  max-width: 269px;
+}
+@include respon(763px){
+  .products__elementssa{
+    margin: 0 auto;
+  }
+  .products__item{
+    margin: 0 auto;
+  }
+  
+}
+@include respon(1199px){
+  .product-title-card__link{
+    max-width: 280px;
+  }
+  
+}
+.product-title__pages{
+  padding-top: 18px;
+}

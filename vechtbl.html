@@ -23,7 +23,7 @@
                   href="mailto:info@freshnesecom.com">info@freshnesecom.com</a></span>
             </div>
             <div class="top__elements  top__el2">
-              <a class="top__links" href="#">Blog</a>
+              <a class="top__links" href="blog.html">Blog</a>
               <a class="top__links" href="#">About Us</a>
               <a class="top__links" href="#">Careers</a>
             </div>
@@ -34,7 +34,7 @@
                   <a class="search__bag" href="#"></a>
                 </div>
               </div>
-              <button class="top__btn"><i class='bx bx-menu'></i></button>
+              <button type="button" class="top__btn"><i class='bx bx-menu'></i></button>
             </div>
           </div>
           <div class="site-header__search search">
@@ -46,11 +46,9 @@
                 <li class="search__drop"><button class="search__buton">All categories </button></li>
                 <li class="search__item search--item1"><a class="search__link" href="#">Bakery</a></li>
                 <li class="search__item search--item2"><a class="search__link" href="#">Meat</a></li>
-                <li class="search__item search--item3"><a class="search__link" href="#">fish</a></li>
-                <li class="search__item search--item4"><a class="search__link" href="#">Drinks</a></li>
               </ul>
-              <label><input class="search__input" type="search" placeholder="Search Products, categories ..."></label>
-              <button class="search__btn"></button>
+              <label><input class="search__input" required type="search" placeholder="Search Products, categories ..."></label>
+              <button type="submit" class="search__btn"></button>
             </form>
             <div class="search__users">
               <a class="search__user" href="#"></a>
@@ -154,7 +152,12 @@
           <h2 class="vechtbl__title">Fruit and vegetables</h2>
           <ul class="vechtbl__list">
             <li class="vechtbl__item"><button class="vechtbl__btns vechtbl--grid">Grid view</button></li>
-            <li class="vechtbl__item"><button class="vechtbl__btns vechtbl--lst vegetables--btn-mar">List view</button></li>
+            <li class="vechtbl__item"><button class="vechtbl__btns vechtbl--lst vegetables--btn-mar"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.333 1.33331H2.66634C1.92996 1.33331 1.33301 1.93027 1.33301 2.66665V13.3333C1.33301 14.0697 1.92996 14.6666 2.66634 14.6666H13.333C14.0694 14.6666 14.6663 14.0697 14.6663 13.3333V2.66665C14.6663 1.93027 14.0694 1.33331 13.333 1.33331Z" stroke="#6A983C" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1.33301 4.66663H14.6663" stroke="#6A983C" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1.33301 8H14.6663" stroke="#6A983C" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1.33301 11.3333H14.6663" stroke="#6A983C" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg> List view</button></li>
             <li class="vechtbl__item vechtbl--pro">Products</li>
           </ul>
         </div>
@@ -218,11 +221,11 @@
               <div class="fruit-categry__raiting raiting">
                 <h2 class="fruit-categry__title">Rating</h2>
                 <ul class="raiting__list">
-                  <li class="raiting__item"><label class="vechtbl__lable-check raiting-checkbox"><input class="vechtbl__check" type="checkbox" name="nbm" id="nbm"><span class="vechtbl__span"><i class='bx bx-check'></i></span></label></li>
-                  <li class="raiting__item"><label class="vechtbl__lable-check raiting-checkbox"><input class="vechtbl__check" type="checkbox" name="nbm" id="nbm"><span class="vechtbl__span"><i class='bx bx-check'></i></span></label></li>
-                  <li class="raiting__item"><label class="vechtbl__lable-check raiting-checkbox"><input class="vechtbl__check" type="checkbox" name="nbm" id="nbm"><span class="vechtbl__span"><i class='bx bx-check'></i></span></label></li>
-                  <li class="raiting__item"><label class="vechtbl__lable-check raiting-checkbox"><input class="vechtbl__check" type="checkbox" name="nbm" id="nbm"><span class="vechtbl__span"><i class='bx bx-check'></i></span></label></li>
-                  <li class="raiting__item"><label class="vechtbl__lable-check raiting-checkbox"><input class="vechtbl__check" type="checkbox" name="nbm" id="nbm"><span class="vechtbl__span"><i class='bx bx-check'></i></span></label></li>
+                  <li class="raiting__item"><label class="vechtbl__lable-check raiting-checkbox"><input class="vechtbl__check" type="radio" name="nbm" id="nbm"><span class="vechtbl__span"><i class='bx bx-check'></i></span></label></li>
+                  <li class="raiting__item"><label class="vechtbl__lable-check raiting-checkbox"><input class="vechtbl__check" type="radio" name="nbm" id="nbm"><span class="vechtbl__span"><i class='bx bx-check'></i></span></label></li>
+                  <li class="raiting__item"><label class="vechtbl__lable-check raiting-checkbox"><input class="vechtbl__check" type="radio" name="nbm" id="nbm"><span class="vechtbl__span"><i class='bx bx-check'></i></span></label></li>
+                  <li class="raiting__item"><label class="vechtbl__lable-check raiting-checkbox"><input class="vechtbl__check" type="radio" name="nbm" id="nbm"><span class="vechtbl__span"><i class='bx bx-check'></i></span></label></li>
+                  <li class="raiting__item"><label class="vechtbl__lable-check raiting-checkbox"><input class="vechtbl__check" type="radio" name="nbm" id="nbm"><span class="vechtbl__span"><i class='bx bx-check'></i></span></label></li>
                 </ul>
               </div>
               <div class="fruit-categry__price">
@@ -296,7 +299,7 @@
                 <div class="fruit-categry__cards col-xs-12 col-sm-6 col-md-12 col-lg-12">
                   <div class="fruit-categry__card">
                     <div class="fruit-categry__card-img">
-                      <img class="fruit-categry__img" src="./img/big.jpg" alt="img">
+                      <img class="fruit-categry__img" src="./img/pro1.png" alt="img">
                     </div>
                     <div class="fruit-categry__all">
                       <div class="fruit-categry__card-des">
@@ -340,7 +343,7 @@
                 <div class="fruit-categry__cards col-xs-12 col-sm-6 col-md-12 col-lg-12">
                   <div class="fruit-categry__card">
                     <div class="fruit-categry__card-img">
-                      <img class="fruit-categry__img" src="./img/big.jpg" alt="img">
+                      <img class="fruit-categry__img" src="./img/pro2.png" alt="img">
                     </div>
                     <div class="fruit-categry__all">
                       <div class="fruit-categry__card-des">
@@ -384,7 +387,7 @@
                 <div class="fruit-categry__cards col-xs-12 col-sm-6 col-md-12 col-lg-12">
                   <div class="fruit-categry__card">
                     <div class="fruit-categry__card-img">
-                      <img class="fruit-categry__img" src="./img/big.jpg" alt="img">
+                      <img class="fruit-categry__img" src="./img/pro5.png" alt="img">
                     </div>
                     <div class="fruit-categry__all">
                       <div class="fruit-categry__card-des">
@@ -430,7 +433,7 @@
             <div class="fruit-categry__elements grid row col-lg-9 col-xs-12">
               <div class="products__item fruit--card col-xs-12 col-lg-4 col-md-4 col-sm-6">
                 <div class="products__elements">
-                  <div class="products__img"><span class="products__sale">- 36 %</span></div>
+                  <div class="products__img"><img class="product__img" src="./img/pro1.png" alt="img"><span class="products__sale">- 36 %</span></div>
                   <h2 class="products__title">Product Title</h2>
                   <p class="products__text">Space for a small product description </p>
                   <div class="products__prises">
@@ -444,7 +447,7 @@
               </div>
               <div class="products__item fruit--card col-xs-12 col-lg-4 col-md-4 col-sm-6">
                 <div class="products__elements">
-                  <div class="products__img"><span class="products__sale">- 36 %</span></div>
+                  <div class="products__img"><img class="product__img" src="./img/pro2.png" alt="img"><span class="products__sale">- 36 %</span></div>
                   <h2 class="products__title">Product Title</h2>
                   <p class="products__text">Space for a small product description </p>
                   <div class="products__prises">
@@ -458,7 +461,7 @@
               </div>
               <div class="products__item fruit--card col-xs-12 col-lg-4 col-md-4 col-sm-6">
                 <div class="products__elements">
-                  <div class="products__img"><span class="products__sale">- 36 %</span></div>
+                  <div class="products__img"><img class="product__img" src="./img/pro3.png" alt="img"><span class="products__sale">- 36 %</span></div>
                   <h2 class="products__title">Product Title</h2>
                   <p class="products__text">Space for a small product description </p>
                   <div class="products__prises">
@@ -472,7 +475,7 @@
               </div>
               <div class="products__item fruit--card col-xs-12 col-lg-4 col-md-4 col-sm-6">
                 <div class="products__elements">
-                  <div class="products__img"><span class="products__sale">- 36 %</span></div>
+                  <div class="products__img"><img class="product__img" src="./img/pro4.png" alt="img"><span class="products__sale">- 36 %</span></div>
                   <h2 class="products__title">Product Title</h2>
                   <p class="products__text">Space for a small product description </p>
                   <div class="products__prises">
@@ -486,7 +489,7 @@
               </div>
               <div class="products__item fruit--card col-xs-12 col-lg-4 col-md-4 col-sm-6">
                 <div class="products__elements">
-                  <div class="products__img"><span class="products__sale">- 36 %</span></div>
+                  <div class="products__img"><img class="product__img" src="./img/pro5.png" alt="img"><span class="products__sale">- 36 %</span></div>
                   <h2 class="products__title">Product Title</h2>
                   <p class="products__text">Space for a small product description </p>
                   <div class="products__prises">
@@ -500,7 +503,7 @@
               </div>
               <div class="products__item fruit--card col-xs-12 col-lg-4 col-md-4 col-sm-6">
                 <div class="products__elements">
-                  <div class="products__img"><span class="products__sale">- 36 %</span></div>
+                  <div class="products__img"><img class="product__img" src="./img/pro6.png" alt="img"><span class="products__sale">- 36 %</span></div>
                   <h2 class="products__title">Product Title</h2>
                   <p class="products__text">Space for a small product description </p>
                   <div class="products__prises">
@@ -514,7 +517,7 @@
               </div>
               <div class="products__item fruit--card col-xs-12 col-lg-4 col-md-4 col-sm-6">
                 <div class="products__elements">
-                  <div class="products__img"><span class="products__sale">- 36 %</span></div>
+                  <div class="products__img"><img class="product__img" src="./img/pro7.png" alt="img"><span class="products__sale">- 36 %</span></div>
                   <h2 class="products__title">Product Title</h2>
                   <p class="products__text">Space for a small product description </p>
                   <div class="products__prises">
@@ -528,7 +531,7 @@
               </div>
               <div class="products__item fruit--card col-xs-12 col-lg-4 col-md-4 col-sm-6">
                 <div class="products__elements">
-                  <div class="products__img"><span class="products__sale">- 36 %</span></div>
+                  <div class="products__img"><img class="product__img" src="./img/pro8.png" alt="img"><span class="products__sale">- 36 %</span></div>
                   <h2 class="products__title">Product Title</h2>
                   <p class="products__text">Space for a small product description </p>
                   <div class="products__prises">
@@ -542,7 +545,7 @@
               </div>
               <div class="products__item fruit--card col-xs-12 col-lg-4 col-md-4 col-sm-6">
                 <div class="products__elements">
-                  <div class="products__img"><span class="products__sale">- 36 %</span></div>
+                  <div class="products__img"><img class="product__img" src="./img/pro1.png" alt="img"><span class="products__sale">- 36 %</span></div>
                   <h2 class="products__title">Product Title</h2>
                   <p class="products__text">Space for a small product description </p>
                   <div class="products__prises">

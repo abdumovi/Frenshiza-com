@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="css/flexboxgrid.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.min.css">
 </head>
-
 <body>
   <div class="wrapper">
     <section id="site-header">
@@ -51,7 +48,7 @@
                 <li class="search__item search--item2"><a class="search__link" href="#">Meat</a></li>
               </ul>
               <label><input class="search__input" required type="search" placeholder="Search Products, categories ..."></label>
-              <button type="submit" type="button" class="search__btn"></button>
+              <button type="submit" class="search__btn"></button>
             </form>
             <div class="search__users">
               <a class="search__user" href="#"></a>
@@ -65,7 +62,7 @@
               <div class="nav__over">
                 <ul class="nav__list">
                   <li class="nav__item">
-                    <a class="nav__link" href="index.html">Bakery</a>
+                    <a class="nav__link" href="#">Bakery</a>
                     <ul class="nav__drop">
                       <li class="nav__drop-item"><a class="nav__drop-link" href="#">Bakery</a></li>
                       <li class="nav__drop-item"><a class="nav__drop-link" href="#">Meat</a></li>
@@ -148,222 +145,183 @@
         </nav>
       </header>
     </section>
-    <main>
-      <section id="detail">
-        <div class="detail__container container">
-          <p class="detail__path">Homepage / Fruit and vegetables<span>/ Carrots from Tomissy Farm</span></p>
+    <section class="product-title-big" id="vechtbl">
+      <div class="vechtbl__hero container">
+        <p class="vechtbl__path">Homepage / Fruit and vegetables<span> / Product title</span></p>
+        <div class="vechtbl__titles">
+          <h2 class="vechtbl__title">Fruit and vegetables</h2>
+          <ul class="vechtbl__list">
+            <li class="vechtbl__item"><button class="vechtbl__btns vechtbl--grid">Grid view</button></li>
+            <li class="vechtbl__item"><button class="vechtbl__btns vechtbl--lst vegetables--btn-mar"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.333 1.33331H2.66634C1.92996 1.33331 1.33301 1.93027 1.33301 2.66665V13.3333C1.33301 14.0697 1.92996 14.6666 2.66634 14.6666H13.333C14.0694 14.6666 14.6663 14.0697 14.6663 13.3333V2.66665C14.6663 1.93027 14.0694 1.33331 13.333 1.33331Z" stroke="#6A983C" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1.33301 4.66663H14.6663" stroke="#6A983C" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1.33301 8H14.6663" stroke="#6A983C" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1.33301 11.3333H14.6663" stroke="#6A983C" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg> List view</button>
+            <li class="vechtbl__item vechtbl--pro">Products</li>
+          </ul>
         </div>
-        <div class="detail__container container">
-          <div class="detail__row row">
-            <div class="detail__block col-xs-12 col-md-12 col-lg-6">
-              <div class="detail__inner-block">
-                <div class="detail__img">
-                  <div class="detail__spans">
-                    <span class="detail__span">- 36 %</span>
-                    <span class="detail__span">Free shipping</span>
-                  </div>
-                  <img class="detail__imgs" src="./img/big.jpg" alt="detailimg">
-                </div>
-                <div class="detail__img">
-                  <img class="detail__imgs" src="./img/big.jpg" alt="detailimg">
-                </div>
-                <div class="detail__img">
-                  <img class="detail__imgs" src="./img/big.jpg" alt="detailimg">
+        <div class="product-title__row row product-title-all">
+          <div class="product-title__el col-md-6">
+            <div class="blog__big-c">
+              <div class="blog__liner">
+                <span class="blog__sub-title">top</span>
+                <div class="blog__element">
+                  <h3 class="blog__title">Our chef tips for a great and tasty dinner ready in 20 minutes</h3>
+                  <span class="blog__times">
+                    Author
+                    <time class="blog__time" datetime="2021-10-23">17. 6. 2020</time>
+                  </span>
                 </div>
               </div>
             </div>
-            <div class="detail__block col-xs-12 col-md-12 col-lg-6">
-              <div class="detail__inner-block">
-                <h2 class="detail__title">Carrots from Tomissy Farm</h2>
-                <div class="detail__star-des">
-                  <ul class="detail__stars">
-                    <li class="detail__star"><i class='bx bxs-star'></i></li>
-                    <li class="detail__star"><i class='bx bxs-star'></i></li>
-                    <li class="detail__star"><i class='bx bxs-star'></i></li>
-                    <li class="detail__star"><i class='bx bxs-star'></i></li>
-                    <li class="detail__star"><i class='bx bx-star'></i></li>
-                  </ul>
-                  <span class="detail__star-inf">(1 customer review)</span>
-                </div>
-                <p class="detail__text">
-                  Carrots from Tomissy Farm are one of the best on the market. Tomisso and his family are giving a full
-                  love to his Bio products. Tomisso’s carrots are growing on the fields naturally.
-                </p>
-                <div class="detail__lst detail-lst">
-                  <div class="detail-lst__block">
-                    <ul class="detail-lst__inner-block">
-                      <li class="detail-lst__span">SKU:</li>
-                      <li class="detail-lst__span">Category:</li>
-                      <li class="detail-lst__span">Stock:</li>
-                      <li class="detail-lst__span">Farm</li>
-                    </ul>
-                    <ul class="detail-lst__inner-block">
-                      <li class="detail-lst__text">76645</li>
-                      <li class="detail-lst__text ">Vegetables</li>
-                      <li class="detail-lst__text activ">In Stock</li>
-                      <li class="detail-lst__text">Grocery Tarm Fields</li>
-                    </ul>
-                  </div>
-                  <div class="detail-lst__block">
-                    <ul class="detail-lst__inner-block">
-                      <li class="detail-lst__span">SKU:</li>
-                      <li class="detail-lst__span">Category:</li>
-                      <li class="detail-lst__span">Stock:</li>
-                      <li class="detail-lst__span">Farm</li>
-                    </ul>
-                    <ul class="detail-lst__inner-block">
-                      <li class="detail-lst__text">76645</li>
-                      <li class="detail-lst__text ">Vegetables</li>
-                      <li class="detail-lst__text activ">In Stock</li>
-                      <li class="detail-lst__text">Grocery Tarm Fields</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="detail__btns detail-btns">
-                  <div class="detail-btns__block">
-                    <p class="detail-btns__number">36.23 USD</p>
-                    <span class="detail-btns__span">48.56 USD</span>
-                  </div>
-                  <div class="detail-btns__block">
-                    <button class="detail-btns__btn"><span>1</span><span class="detail-btns__inner-span">|</span>
-                      Pcs</button>
-                    <a class="detail-btns__link" href="info.html">Add to cart</a>
-                  </div>
-                </div>
-                <div class="detail__table tables">
-                  <div class="tables__texts">
-                    <p class="tables__text">Add to my wish list</p>
-                    <p class="tables__text compres">Compare</p>
-                  </div>
-                  <div class="tables__slider">
-                    <p class="tables__item tables--befor">Description</p>
-                    <p class="tables__item revyus">Reviews</p>
-                    <p class="tables__item revyus">Questions</p>
-                  </div>
-                  <div class="tables__inner-texts">
-                    <p class="tables__sub-title">How to cook</p>
-                    <p class="tables__inner-text">We work hard to ensure that the fruit and vegetables we sell are fresh
-                      and high in quality. If we don’t grow them ourselves, we source them from carefully chosen
-                      suppliers, preferring to buy locally whenever possible.</p>
-                    <p class="tables__sub-title">Origins</p>
-                    <p class="tables__inner-text">We work hard to ensure that the fruit and vegetables we sell are fresh
-                      and high in quality. If we don’t grow them ourselves, we source them from carefully chosen
-                      suppliers, preferring to buy locally whenever possible.</p>
-                  </div>
-                  <div class="tables__table">
-                    <p class="tables__sub-title">Full of Vitamins!</p>
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th class="tables-item-bold" scope="col">Vitamins</th>
-                          <th class="tables-item-bold" scope="col">Quantity</th>
-                          <th class="tables-item-bold" scope="col">% DV</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td class="tables-item">Mark</td>
-                          <td class="tables-item">Otto</td>
-                          <td class="tables-item">6 %</td>
-                        </tr>
-                        <tr>
-                          <td class="tables-item">Mark</td>
-                          <td class="tables-item">Otto</td>
-                          <td class="tables-item">6 %</td>
-                        </tr>
-                        <tr>
-                          <td class="tables-item">Mark</td>
-                          <td class="tables-item">Otto</td>
-                          <td class="tables-item">6 %</td>
-                        </tr>
-                        <tr>
-                          <td class="tables-item">Jacob</td>
-                          <td class="tables-item">Thornton</td>
-                          <td class="tables-item">6 %</td>
-                        </tr>
-                        <tr>
-                          <td class="tables-item">Jacob</td>
-                          <td class="tables-item">Thornton</td>
-                          <td class="tables-item">6 %</td>
-                        </tr>
-                        <tr>
-                          <td class="tables-item">Jacob</td>
-                          <td class="tables-item">Thornton</td>
-                          <td class="tables-item">6 %</td>
-                        </tr>
-                        <tr>
-                          <td class="tables-item" colspan="2">Larry the Bird</td>
-                          <td class="tables-item">6 %</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+          </div>
+          <div class="product-title__el col-md-6">
+            <div class="blog__big-c">
+              <div class="blog__liner">
+                <span class="blog__sub-title">top</span>
+                <div class="blog__element">
+                  <h3 class="blog__title">Our chef tips for a great and tasty dinner ready in 20 minutes</h3>
+                  <span class="blog__times">
+                    Author
+                    <time class="blog__time" datetime="2021-10-23">17. 6. 2020</time>
+                  </span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section id="head-line">
-        <div class="costmers__container container">
-          <h3 class="hero__card-title costmers--title">Section Headline</h3>
-          <button class="costmers__btn">Button</button>
-        </div>
-        <div class="head-line__container container">
-          <div class="head-line__row row">
-            <div class="products__item col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="products__elements head-line--el">
-                <div class="products__img"><img class="product__img" src="./img/pro1.png" alt="img"></div>
-                <h2 class="products__title">Product Title</h2>
-                <p class="products__text">Space for a small product description </p>
-                <div class="products__prises">
-                  <span class="products__prise">1.48 USD</span>
-                  <a class="products__btn" href="#">Buy now</a>
-                </div>
-              </div>
+      </div>
+    </section>
+    <section id="product-title">
+      <div class="product-title__container container"> 
+        <div class="product-title__row row">
+          <div class="products__items col-lg-3 col-xs-12">
+            <div class="products__elementsss text-c product-title__con">
+              <h3 class="hero__card-title">Best selling products</h3>
+              <ul class="hero__list products--lst">
+                <li class="hero__item"><a class="hero__link" href="#">Kitchen</a></li>
+                <li class="hero__item"><a class="hero__link" href="#">Meat and fish</a></li>
+                <li class="hero__item"><a class="hero__link" href="#">Special nutrition</a></li>
+                <li class="hero__item"><a class="hero__link" href="#">Pharmacy</a></li>
+                <li class="hero__item"><a class="hero__link" href="#">Baby</a></li>
+              </ul>
             </div>
-            <div class="products__item col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="products__elements head-line--el">
-                <div class="products__img"><img class="product__img" src="./img/pro2.png" alt="img"></div>
-                <h2 class="products__title">Product Title</h2>
-                <p class="products__text">Space for a small product description </p>
-                <div class="products__prises">
-                  <span class="products__prise">1.48 USD</span>
-                  <a class="products__btn" href="#">Buy now</a>
-                </div>
-              </div>
+            <div class="products__elementsss text-c product-title__con">
+              <h3 class="hero__card-title">Best selling products</h3>
+              <ul class="hero__list products--lst">
+                <li class="hero__item"><a class="hero__link  product-title-links" href="#">Kitchen</a></li>
+                <li class="hero__item"><a class="hero__link  product-title-links" href="#">Meat and fish</a></li>
+                <li class="hero__item"><a class="hero__link  product-title-links" href="#">Special nutrition</a></li>
+                <li class="hero__item"><a class="hero__link  product-title-links" href="#">Pharmacy</a></li>
+                <li class="hero__item"><a class="hero__link  product-title-links" href="#">Baby</a></li>
+              </ul>
             </div>
-            <div class="products__item col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="products__elements head-line--el">
-                <div class="products__img"><img class="product__img" src="./img/pro4.png" alt="img"><span class="products__sale">- 36 %</span></div>
-                <h2 class="products__title">Product Title</h2>
-                <p class="products__text">Space for a small product description </p>
-                <div class="products__prises">
-                  <div class="products__pris">
-                    <span class="products__prise">1.12 USD</span>
-                    <span class="products__sales">48.56</span>
+            <div class="product-title__content">
+              <h3 class="product-title__title">Join our list</h3>
+              <p class="product-title__text">Signup to be the first to hear about exclusive deals, special offers, recepies from our masters and others.</p>
+              <a class="card-prises__link product-title-card__link" href="#"><span class="card-prises__grey">Your email address</span><span class="card-prises__bold">Subscribe</span></a>
+            </div>
+          </div>
+          <div class="product-title__cards col-lg-9 col-xs-12">
+            <div class="product-title__row row">
+              <div class="products__itemm col-xs-12 col-lg-4 col-md-3 col-sm-4 product-title-card">
+                <div class="products__elementssa">
+                  <div class="blog__eimg">
+                    <img src="./img/pro1.png" alt="blog">
                   </div>
-                  <a class="products__btn" href="#">Buy now</a>
+                  <span class="blog__sub-title">top</span>
+                  <h2 class="blog__inner-title">Which vegetable your family will love and want’s eat each day</h2>
+                  <time class="blog__etime" datetime="2021-10-23"><span>Author</span> 15. 6. 2020</time>
                 </div>
               </div>
-            </div>
-            <div class="products__item col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="products__elements head-line--el">
-                <div class="products__img"><img class="product__img" src="./img/pro5.png" alt="img"></div>
-                <h2 class="products__title">Product Title</h2>
-                <p class="products__text">Space for a small product description </p>
-                <div class="products__prises">
-                  <span class="products__prise">1.48 USD</span>
-                  <a class="products__btn" href="#">Buy now</a>
+              <div class="products__itemm col-xs-12 col-lg-4 col-md-3 col-sm-4 product-title-card">
+                <div class="products__elementssa">
+                  <div class="blog__eimg">
+                    <img src="./img/pro2.png" alt="blog">
+                  </div>
+                  <span class="blog__sub-title">top</span>
+                  <h2 class="blog__inner-title">Which vegetable your family will love and want’s eat each day</h2>
+                  <time class="blog__etime" datetime="2021-10-23"><span>Author</span> 15. 6. 2020</time>
+                </div>
+              </div>
+              <div class="products__itemm col-xs-12 col-lg-4 col-md-3 col-sm-4 product-title-card">
+                <div class="products__elementssa">
+                  <div class="blog__eimg">
+                    <img src="./img/pro3.png" alt="blog">
+                  </div>
+                  <span class="blog__sub-title">top</span>
+                  <h2 class="blog__inner-title">Which vegetable your family will love and want’s eat each day</h2>
+                  <time class="blog__etime" datetime="2021-10-23"><span>Author</span> 15. 6. 2020</time>
+                </div>
+              </div>
+              <div class="products__itemm col-xs-12 col-lg-4 col-md-3 col-sm-4 product-title-card">
+                <div class="products__elementssa">
+                  <div class="blog__eimg">
+                    <img src="./img/pro4.png" alt="blog">
+                  </div>
+                  <span class="blog__sub-title">top</span>
+                  <h2 class="blog__inner-title">Which vegetable your family will love and want’s eat each day</h2>
+                  <time class="blog__etime" datetime="2021-10-23"><span>Author</span> 15. 6. 2020</time>
+                </div>
+              </div>
+              <div class="products__itemm col-xs-12 col-lg-4 col-md-3 col-sm-4 product-title-card">
+                <div class="products__elementssa">
+                  <div class="blog__eimg">
+                    <img src="./img/pro5.png" alt="blog">
+                  </div>
+                  <span class="blog__sub-title">top</span>
+                  <h2 class="blog__inner-title">Which vegetable your family will love and want’s eat each day</h2>
+                  <time class="blog__etime" datetime="2021-10-23"><span>Author</span> 15. 6. 2020</time>
+                </div>
+              </div>
+              <div class="products__itemm col-xs-12 col-lg-4 col-md-3 col-sm-4 product-title-card">
+                <div class="products__elementssa">
+                  <div class="blog__eimg">
+                    <img src="./img/pro6.png" alt="blog">
+                  </div>
+                  <span class="blog__sub-title">top</span>
+                  <h2 class="blog__inner-title">Which vegetable your family will love and want’s eat each day</h2>
+                  <time class="blog__etime" datetime="2021-10-23"><span>Author</span> 15. 6. 2020</time>
+                </div>
+              </div>
+              <div class="products__itemm col-xs-12 col-lg-4 col-md-3 col-sm-4 product-title-card">
+                <div class="products__elementssa">
+                  <div class="blog__eimg">
+                    <img src="./img/pro7.png" alt="blog">
+                  </div>
+                  <span class="blog__sub-title">top</span>
+                  <h2 class="blog__inner-title">Which vegetable your family will love and want’s eat each day</h2>
+                  <time class="blog__etime" datetime="2021-10-23"><span>Author</span> 15. 6. 2020</time>
+                </div>
+              </div>
+              <div class="products__itemm col-xs-12 col-lg-4 col-md-3 col-sm-4 product-title-card">
+                <div class="products__elementssa">
+                  <div class="blog__eimg">
+                    <img src="./img/pro8.png" alt="blog">
+                  </div>
+                  <span class="blog__sub-title">top</span>
+                  <h2 class="blog__inner-title">Which vegetable your family will love and want’s eat each day</h2>
+                  <time class="blog__etime" datetime="2021-10-23"><span>Author</span> 15. 6. 2020</time>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
+        <div class="fruit-categry__pages pages product-title__pages">
+          <div class="pages__pag">
+            <p class="pages__pag">Page:</p> 
+            <span class="pages__span">1</span>
+            <span class="pages__span">2</span>
+            <span class="pages__span">3</span>
+            <span class="pages__span">4</span>
+          </div>
+          <a class="fruit-categry__senes-btn card--btn" href="#">Next page</a>
+          <p class="pages__text">Products</p>
+        </div>
+      </div>
+    </section>
   </div>
-
   <footer id="site-footer">
     <div class="site-footer__container container">
       <div class="site-footer__link-block link-block">
@@ -444,5 +402,4 @@
   </footer>
   <script src="js/main.js"></script>
 </body>
-
 </html>

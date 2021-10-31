@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,kBAAkB,CAAC,YAAY,AAAA,CAC7B,SAAS,CAAE,IAAI,CAChB,AACD,AAAA,kBAAkB,CAAC,YAAY,AAAA,CAC7B,eAAe,CAAE,KAAK,CACvB,AACD,AAAA,mBAAmB,AAAA,CACjB,aAAa,CAAE,IAAI,CACpB",
+    "sources": [
+        "../scss/product/product.scss"
+    ],
+    "names": [],
+    "file": "product.min.css"
+}

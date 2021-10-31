@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
   <link rel="stylesheet" href="css/flexboxgrid.min.css">
   <link rel="stylesheet" href="css/main.min.css">
 </head>
+
 <body>
   <div class="wrapper">
     <section id="site-header">
@@ -33,7 +35,7 @@
                   <a class="search__bag" href="#"></a>
                 </div>
               </div>
-              <button class="top__btn"><i class='bx bx-menu'></i></button>
+              <button type="button" class="top__btn"><i class='bx bx-menu'></i></button>
             </div>
           </div>
           <div class="site-header__search search">
@@ -45,11 +47,9 @@
                 <li class="search__drop"><button class="search__buton">All categories </button></li>
                 <li class="search__item search--item1"><a class="search__link" href="#">Bakery</a></li>
                 <li class="search__item search--item2"><a class="search__link" href="#">Meat</a></li>
-                <li class="search__item search--item3"><a class="search__link" href="#">fish</a></li>
-                <li class="search__item search--item4"><a class="search__link" href="#">Drinks</a></li>
               </ul>
-              <label><input class="search__input" type="search" placeholder="Search Products, categories ..."></label>
-              <button class="search__btn"></button>
+              <label><input class="search__input" required type="search" placeholder="Search Products, categories ..."></label>
+              <button type="submit" class="search__btn"></button>
             </form>
             <div class="search__users">
               <a class="search__user" href="#"></a>
@@ -147,7 +147,7 @@
       </header>
     </section>
     <main>
-      <section class="info"> 
+      <section class="info">
         <div class="info__container container">
           <p class="detail__path">Homepage / <span>Checkout page</span></p>
           <div class="info__row row">
@@ -163,49 +163,51 @@
                     <div class="info__form-block">
                       <label class="info__form-lable">
                         First name
-                        <input class="info__form-input" type="text" placeholder="First name" id="name" name="name" required
-                          autocomplete="off">
+                        <input class="info__form-input" type="text" placeholder="First name" id="name" name="name"
+                          required autocomplete="off">
                       </label>
                       <label class="info__form-lable">
                         Last name
-                        <input class="info__form-input" type="text" placeholder="Last name" id="last" name="last" required
-                          autocomplete="off">
+                        <input class="info__form-input" type="text" placeholder="Last name" id="last" name="last"
+                          required autocomplete="off">
                       </label>
                       <label class="info__form-lable">
                         Email address
-                        <input class="info__form-input" type="email" placeholder="Email address" id="address" name="address" required
-                          autocomplete="off">
+                        <input class="info__form-input" type="email" placeholder="Email address" id="address"
+                          name="address" required autocomplete="off">
                       </label>
                       <label class="info__form-lable">
                         Phone number
-                        <input class="info__form-input" type="number" placeholder="Phone number" id="number" name="number" required
-                          autocomplete="off">
+                        <input class="info__form-input" type="number" placeholder="Phone number" id="number"
+                          name="number" required autocomplete="off">
                       </label>
                     </div>
                     <div class="info__form-block">
                       <label class="info__form-lable">
                         Address
-                        <input class="info__form-input" type="text" placeholder="Address" id="address" name="address" required
-                          autocomplete="off">
+                        <input class="info__form-input" type="text" placeholder="Address" id="address" name="address"
+                          required autocomplete="off">
                       </label>
                       <label class="info__form-lable">
                         Town / City
-                        <input class="info__form-input" type="text" placeholder="Town / City" id="city" name="city" required
-                          autocomplete="off">
+                        <input class="info__form-input" type="text" placeholder="Town / City" id="city" name="city"
+                          required autocomplete="off">
                       </label>
                       <label class="info__form-lable">
                         State / Country
-                        <input class="info__form-input" type="text" placeholder="State / Country" id="city" name="city" required
-                          autocomplete="off">
+                        <input class="info__form-input" type="text" placeholder="State / Country" id="city" name="city"
+                          required autocomplete="off">
                       </label>
                       <label class="info__form-lable">
                         ZIP/Postal code
-                        <input class="info__form-input" type="text" placeholder="ZIP/Postal code" id="code" name="code" required
-                          autocomplete="off">
+                        <input class="info__form-input" type="text" placeholder="ZIP/Postal code" id="code" name="code"
+                          required autocomplete="off">
                       </label>
                     </div>
                   </div>
-                  <p class="reaply__form-inner-text"><label class="vechtbl__lable-check brand-checkbox"><input class="vechtbl__check" type="checkbox" name="nbm" id="nbm"><span class="vechtbl__span"><i class='bx bx-check'></i></span></label>Ship to a different address?.</p>
+                  <p class="reaply__form-inner-text"><label class="vechtbl__lable-check brand-checkbox"><input
+                        class="vechtbl__check" type="checkbox" name="nbm" id="nbm"><span class="vechtbl__span"><i
+                          class='bx bx-check'></i></span></label>Ship to a different address?.</p>
                   <h2 class="info__title">Billing method</h2>
                   <div class="info__grey-texts">
                     <p class="info__grey-text">Please enter your billing info</p>
@@ -213,59 +215,278 @@
                   </div>
                   <div class="info__form-method form-method">
                     <div class="form-method__block fedex">
-                      <label class="form-method__lable"><input class="form-method__radio" name="usd" id="usd" type="radio">FedEx</label>
+                      <label class="form-method__lable"><input class="form-method__radio" name="usd" id="usd"
+                          type="radio">FedEx</label>
                       <p class="form-method__text"><span class="form-method__span">+32 USD</span>Additional price</p>
                     </div>
                     <div class="form-method__block dhl">
-                      <label class="form-method__lable"><input class="form-method__radio" name="usd" id="usd" type="radio">DHL</label>
+                      <label class="form-method__lable"><input class="form-method__radio" name="usd" id="usd"
+                          type="radio">DHL</label>
                       <p class="form-method__text"><span class="form-method__span">+32 USD</span>Additional price</p>
                     </div>
                   </div>
-                  <div class="info__form-payment form-payment">
+                  <div id="1" class="info__form-payment form-payment">
                     <div class="form-payment__blocks">
                       <div class="form-payment__block visa">
-                        <label class="form-method__lable"><input class="form-method__radio" name="visa" id="vis" type="radio">VISA</label>
+                        <label class="form-method__lable"><input class="form-method__radio radios" name="visa" id="vis"
+                            type="radio">VISA</label>
                       </div>
-                      <div class="form-payment__block">
+                      <div class="form-payment__block-c">
                         <label class="info__form-lable">
                           Card number
-                          <input class="info__form-input small-input" type="number" placeholder="Card number" id="number" name="number" required
-                            autocomplete="off">
+                          <input class="info__form-input" type="number" placeholder="Card number" id="number"
+                            name="number" required autocomplete="off">
                         </label>
                       </div>
                       <div class="form-payment__block">
                         <div class="form-payment__inner-blocks">
                           <label class="form-payment__lable">
                             Card holder
-                            <input class="form-payment__input" type="number" placeholder="Card holder" required name="card" id="card">
+                            <input class="form-payment__input" type="number" placeholder="Card holder" required
+                              name="card" id="card">
                           </label>
                         </div>
                         <div class="form-payment__inner-block">
                           <label class="form-payment__lable">
                             Expiration date
-                            <input class="form-payment__input small-input" type="text" placeholder="Card holder" required name="data" id="data">
+                            <input class="form-payment__input small-input" type="text" placeholder="DD/MM/YY" required
+                              name="data" id="data">
                           </label>
                           <label class="form-payment__lable">
                             CVC
-                            <input class="form-payment__input small-input" type="number" placeholder="Card holder" required name="cvi" id="cvi">
+                            <input class="form-payment__input small-input" type="number" placeholder="CVC" required
+                              name="cvi" id="cvi">
                           </label>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <div id="2" class="info__form-payment form-payment">
+                    <div class="form-payment__blocks">
+                      <div class="form-payment__block paypal">
+                        <label class="form-method__lable"><input class="form-method__radio radios" name="visa" id="vis"
+                            type="radio">PayPal</label>
+                      </div>
+                      <div class="form-payment__block-c">
+                        <label class="info__form-lable">
+                          Card number
+                          <input class="info__form-input" type="number" placeholder="Card number" id="number"
+                            name="number" required autocomplete="off">
+                        </label>
+                      </div>
+                      <div class="form-payment__block">
+                        <div class="form-payment__inner-blocks">
+                          <label class="form-payment__lable">
+                            Card holder
+                            <input class="form-payment__input" type="number" placeholder="Card holder" required
+                              name="card" id="card">
+                          </label>
+                        </div>
+                        <div class="form-payment__inner-block">
+                          <label class="form-payment__lable">
+                            Expiration date
+                            <input class="form-payment__input small-input" type="text" placeholder="DD/MM/YY" required
+                              name="data" id="data">
+                          </label>
+                          <label class="form-payment__lable">
+                            CVC
+                            <input class="form-payment__input small-input" type="number" placeholder="CVC" required
+                              name="cvi" id="cvi">
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="3" class="info__form-payment form-payment">
+                    <div class="form-payment__blocks">
+                      <div class="form-payment__block bitcoin">
+                        <label class="form-method__lable"><input class="form-method__radio radios" name="visa" id="vis"
+                            type="radio">Bitcoin</label>
+                      </div>
+                      <div class="form-payment__block-c">
+                        <label class="info__form-lable">
+                          Card number
+                          <input class="info__form-input" type="number" placeholder="Card number" id="number"
+                            name="number" required autocomplete="off">
+                        </label>
+                      </div>
+                      <div class="form-payment__block">
+                        <div class="form-payment__inner-blocks">
+                          <label class="form-payment__lable">
+                            Card holder
+                            <input class="form-payment__input" type="number" placeholder="Card holder" required
+                              name="card" id="card">
+                          </label>
+                        </div>
+                        <div class="form-payment__inner-block">
+                          <label class="form-payment__lable">
+                            Expiration date
+                            <input class="form-payment__input small-input" type="text" placeholder="DD/MM/YY" required
+                              name="data" id="data">
+                          </label>
+                          <label class="form-payment__lable">
+                            CVC
+                            <input class="form-payment__input small-input" type="number" placeholder="CVC" required
+                              name="cvi" id="cvi">
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="info__form-inform form-inform">
+                    <h2 class="info__title">Additional informations</h2>
+                    <div class="info__grey-texts ">
+                      <p class="info__grey-text">Need something else? We will make it for you!</p>
+                      <p class="info__grey-text">Step 1 of 5</p>
+                    </div>
+                    <label class="reaply__form-lables form-inform-block">
+                      Order notes
+                      <textarea class="reaply__form-textarea" name="commet" id="commet"
+                        placeholder="Need a specific delivery day? Sending a gitf? Let’s say ..." autocomplete="off"
+                        required></textarea>
+                    </label>
+                  </div>
+                  <div class="info__form-confirm form-confirm">
+                    <div class="info__grey-texts ">
+                      <p class="info__grey-text">Confirmation</p>
+                      <p class="info__grey-text">Step 1 of 5</p>
+                    </div>
+                    <p class="reaply__form-inner-text confirm"><label class="vechtbl__lable-check brand-checkbox"><input
+                          class="vechtbl__check" type="checkbox" name="nbm" id="nbm"><span class="vechtbl__span"><i
+                            class='bx bx-check'></i></span></label>I agree with sending an Marketing and newsletter
+                      emails. No spam, promissed!</p>
+                    <p class="reaply__form-inner-text confirm2"><label
+                        class="vechtbl__lable-check brand-checkbox"><input class="vechtbl__check" type="checkbox"
+                          name="nbm" id="nbm"><span class="vechtbl__span"><i class='bx bx-check'></i></span></label>Ship
+                      to a different address?.</p>
+                  </div>
+                  <button class="reaply__form-btn" type="submit">Complete order</button>
                 </form>
+                <div class="info__data info-data">
+                  <p class="info-data__title">All your data are safe</p>
+                  <p class="info-data__text">We are using the most advanced security to provide you the best experience
+                    ever.</p>
+                </div>
               </div>
             </div>
             <div class="info__elementns col-xs-12 col-md-5">
-              <div class="info__inner-elements">
+              <div class="info__inner-elements-card info-card">
+                <h2 class="info-card__title">Order Summary</h2>
+                <p class="info-card__text">Price can change depending on shipping method and taxes of your state.</p>
+                <div class="info-card__block">
+                  <div class="info-card__block-all">
+                    <div class="info-card__inner-min-block info-min">
+                      <div class="info-min__img">
 
+                      </div>
+                      <p class="info-min__text">Wishlist</p>
+                      <p class="info-min__text">Compare</p>
+                      <p class="info-min__text">Remove</p>
+                    </div>
+                    <div class="info-card__inner-block info-big">
+                      <h4 class="info-big__title">Product title</h4>
+                      <div class="info-big__block">
+                        <div>
+                          <p class="info-big__grey">Farm:</p>
+                          <p class="info-big__grey">Freshness:</p>
+                        </div>
+                        <div>
+                          <p class="info-big__black">Tharamis Farm</p>
+                          <p class="info-big__black">1 day old</p>
+                        </div>
+                      </div>
+                      <ul class="info-big__list">
+                        <li class="info-big__item"><i class='bx bxs-star'></i></li>
+                        <li class="info-big__item"><i class='bx bxs-star'></i></li>
+                        <li class="info-big__item"><i class='bx bxs-star'></i></li>
+                        <li class="info-big__item"><i class='bx bxs-star'></i></li>
+                        <li class="info-big__item"><i class='bx bxs-star'></i></li>
+                      </ul>
+                      <div class="info-big__btns">
+                        <div>
+                          <h4 class="info-big__prise">36.99 USD</h4>
+                          <span class="info-big__span">48.56 USD</span>
+                        </div>
+                        <button class="info-big__btn"><span class="info-big__btn-span">1pcs |</span> Pcs</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="info-card__block-all">
+                    <div class="info-card__inner-min-block info-min">
+                      <div class="info-min__img">
+
+                      </div>
+                      <p class="info-min__text">Wishlist</p>
+                      <p class="info-min__text">Compare</p>
+                      <p class="info-min__text">Remove</p>
+                    </div>
+                    <div class="info-card__inner-block info-big">
+                      <h4 class="info-big__title">Product title</h4>
+                      <div class="info-big__block">
+                        <div>
+                          <p class="info-big__grey">Farm:</p>
+                          <p class="info-big__grey">Freshness:</p>
+                        </div>
+                        <div>
+                          <p class="info-big__black">Tharamis Farm</p>
+                          <p class="info-big__black">1 day old</p>
+                        </div>
+                      </div>
+                      <ul class="info-big__list">
+                        <li class="info-big__item"><i class='bx bxs-star'></i></li>
+                        <li class="info-big__item"><i class='bx bxs-star'></i></li>
+                        <li class="info-big__item"><i class='bx bxs-star'></i></li>
+                        <li class="info-big__item"><i class='bx bxs-star'></i></li>
+                        <li class="info-big__item"><i class='bx bxs-star'></i></li>
+                      </ul>
+                      <div class="info-big__btns">
+                        <div>
+                          <h4 class="info-big__prise">36.99 USD</h4>
+                          <span class="info-big__span">48.56 USD</span>
+                        </div>
+                        <button class="info-big__btn"><span class="info-big__btn-span">1pcs |</span> Pcs</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="info-card__prises card-prises">
+                    <div class="card-prises__block">
+                      <div class="card-prises__inner-block">
+                        <p class="card-prises__text">Subtotal</p>
+                        <p class="card-prises__text">Tax</p>
+                        <p class="card-prises__text">Shipping</p>
+                      </div>
+                      <div class="card-prises__inner-block">
+                        <p class="card-prises__end-text">73.98 USD</p>
+                        <p class="card-prises__end-text">17% 16.53 USD</p>
+                        <p class="card-prises__end-text">0 USD</p>
+                      </div>
+                    </div>
+                    <a class="card-prises__link" href="#"><span class="card-prises__grey">Apply promo code</span><span class="card-prises__bold">Apply now</span></a>
+                    <div class="card-prises__total total">
+                      <div>
+                        <p class="total__title">Total Order</p>
+                        <p class="total__tyext">Guaranteed delivery day:  June 12, 2020</p>
+                      </div>
+                      <div>
+                        <p class="total__prise">89.84 USD</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="info__last"> 
+          <div class="info__container container">
+            <p class="info__last-text">Copyright © 2020 Freshnesecom</p>
+          </div>
+        </div>
       </section>
-    </main> 
+    </main>
   </div>
-  <script src="js/main.js"></script> 
+  <script src="js/main.js"></script>
 </body>
+
 </html>

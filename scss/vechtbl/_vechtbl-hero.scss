@@ -65,16 +65,7 @@
 .vechtbl--grid{
   position: relative;
 }
-.vechtbl--lst::before{
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  left: -12px;
-  top: 0px;
-  right: 0;
-  background-image: url('../../img/lst.svg');
-}
+
 .vechtbl--grid::before{
   content: "";
   position: absolute;

@@ -41,19 +41,54 @@
 }
 .raiting-checkbox{
   margin-left: 8px;
-  margin-bottom: 19px;
+  margin-bottom: 25px;
+  position: relative;
+  
+}
+.raiting__item{
   position: relative;
 }
-.raiting-checkbox::after{
+.raiting__item::after{
   content: "";
   width: 88px;
   height: 16px;
-  right: 77px;
+  top: -3px;
+  left: 33px;
   position:absolute;
   background-repeat: no-repeat;
-  background-image: url('../../img/stars.svg');
-
 }
+
+.raiting__item:nth-child(1){
+  &::after{
+    background-image: url('../../img/stars.svg');
+  }
+ 
+}
+.raiting__item:nth-child(2){
+  &::after{
+    background-image: url('../../img/stars2.svg');
+  }
+  
+}
+.raiting__item:nth-child(3){
+  &::after{
+    background-image: url('../../img/stars3.svg');
+  }
+  
+}
+.raiting__item:nth-child(4){
+  &::after{
+    background-image: url('../../img/stars4.svg');
+  }
+  
+}
+.raiting__item:nth-child(5){
+  &::after{
+    background-image: url('../../img/stars5.svg');
+  }
+  
+}
+
 .raiting{
   margin-bottom: 48px;
 }

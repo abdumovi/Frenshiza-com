@@ -142,7 +142,7 @@
   text-decoration-line: line-through;
   color: #A9A9A9;  
 }
-@mixin bold($size,$line) {
+@mixin bold ($size,$line) {
   font-weight: 600;
   font-size: $size;
   line-height: $line;

@@ -4,6 +4,7 @@
 }
 
 .info {
+
   &__form-block{
     flex-grow: 1;
   }
@@ -76,6 +77,7 @@
     margin-right: 16px;
     cursor: pointer;
     position: relative;
+    cursor: pointer;
 
     &::before{
       content: "";
@@ -87,6 +89,7 @@
       border-radius: 50%;
       border: 1.5px solid #D1D1D1;
       background-color: #fff;
+      cursor: pointer;
     }
     &::after{
       content: "";
@@ -97,6 +100,7 @@
       height: 10px;
       background-color: #fff;
       border-radius: 50%;
+      cursor: pointer;
     }
     &:checked::before{
       background-color: $green;
@@ -161,7 +165,9 @@
   padding: 16px; 
 }
 .form-payment {
-
+  height: 50px;
+  overflow: hidden;
+  margin-bottom: 16px;
   &__block {
     @include flex-b;
     @include flow;
@@ -173,24 +179,324 @@
     flex-grow: 1;
   }
 
-  // .form-payment__lable
-
   &__lable {
+    @include bold(12px,18px); 
   }
-
-  // .form-payment__input
 
   &__input {
     width: 100%;
+    padding: 11px 21px;
+    background: #F9F9F9;
+    border: 1px solid #D1D1D1;
+    outline-color: #a19f9f;
+    border-radius: 12px;
   }
-
-  // .form-payment__inner-block
 
   &__inner-block {
     display: flex;
     max-width: 256px;
   }
 }
+
 .small-input{
   width: 120px;
+}
+
+.form-inform{
+  margin-top: 64px;
+}
+.form-inform-block{
+  margin-bottom: 64px;
+}
+.info__form .confirm{
+  max-width: 100%;
+  margin-bottom: 16px;
+}
+.info__form .confirm2{
+  margin-bottom: 32px;
+}
+.reaply__form-btn{
+  @include all-btn;
+  cursor: pointer;
+  margin-bottom: 48px;
+}
+.paypal{
+  background-color: #fff;
+  position: relative;
+  padding: 0;
+}
+.paypal::after{
+  content: "";
+  position: absolute;
+  width: 94px;
+  height: 20px;
+  right: 0;
+  background-repeat: no-repeat;
+  background-image: url('../../img/pay.png');  
+}
+.bitcoin{
+  background-color: #fff;
+  position: relative;
+  padding: 0;
+}
+.bitcoin::after{
+  content: "";
+  position: absolute;
+  width: 94px;
+  height: 20px;
+  right: 0;
+  background-repeat: no-repeat;
+  background-image: url('../../img/bit.svg');   
+}
+.autos{
+  height: auto;
+}
+
+.info-data {
+  margin-bottom: 16px;
+  max-width: 213px;
+
+  &::before{
+    content: "";
+    width: 32px;
+    height: 32px;
+    margin-bottom: 9px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url('../../img/data.svg');
+  }
+  &__title {
+    @include bold(12px,18px);
+    margin-bottom: 2px
+  }
+  &__text {
+    @include greys(12px,18px);
+  }
+}
+
+
+.info {
+
+  &__inner-elements-card {
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;  
+    padding: 32px 16px;
+  }
+}
+.info-card {
+
+  &__title {
+    @include bold(22px,33px);
+    margin-bottom: 4px;
+  }
+
+  &__text {
+    @include greys(12px,16px);
+    margin-bottom: 40px;
+  }
+
+  &__block-all {
+    @include flex-b;
+    @include flow;
+    border-bottom: 1px solid #F9F9F9;
+    margin-bottom: 32px;
+
+  }
+
+
+  &__inner-block {
+    max-width: 320px;
+  }
+
+}
+.info-min {
+  margin-right: 16px;
+  max-width: 100px;
+
+  &__img {
+    background: #F9F9F9;
+    border-radius: 12px;
+    width: 100px;
+    height: 67px;
+    margin-bottom: 12px;  
+  }
+
+  &__text {
+    @include greys(12px,16px);
+    margin-bottom: 8px;
+
+    &::before{
+      content: "";
+      width: 17px;
+      height: 17px;
+      vertical-align: middle;
+      margin-left: 5px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url('../../img/com.svg');
+    }
+    
+  }
+}
+.info-big {
+  flex-grow: 1;
+  &__title {
+    @include bold(15px,22px);
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+
+  &__block {
+    max-width: 251px;
+    @include flex;
+    @include flex;
+    margin-bottom: 8px;
+  }
+
+  &__grey {
+    @include greys(12px,16px);
+    margin-right: 14px;
+  }
+
+  &__black {
+    flex-grow: 1;
+    @include regular-black(12px,16px);
+  }
+
+  &__list {
+    @include flex;
+    margin-bottom: 16px;
+  }
+
+  &__item {
+    margin-right: 2px;
+  }
+
+  &__btns {
+    @include flex-b;
+    margin-bottom: 16px
+  }
+
+  &__prise {
+    @include bold(18px, 27px);
+    color: $green;
+  }
+  &__span {
+    @include price;
+  }
+
+  &__btn {
+    background: #F9F9F9;
+    border: 1px solid #D1D1D1;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 6px;
+    @include bold(12px, 18px);
+    cursor: pointer;
+    &::after{
+      content: "";
+      width: 12px;
+      height: 12px;
+      margin-left: 4px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url('../../img/down1.svg');
+      vertical-align: middle;
+    }
+    
+  }
+
+  &__btn-span {
+    color: #D1D1D1;
+  } 
+}
+
+.card-prises {
+
+  &__block {
+    margin-bottom: 32px;
+    @include flex-b;
+  }
+
+  &__text {
+    @include bold(12px,18px);
+    margin-bottom: 12px;
+  }
+
+  &__end-text {
+    @include bold(12px,18px);
+    margin-bottom: 12px;
+    text-align: end;
+  }
+
+  &__link {
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+    padding: 11px 16px;
+    display: block;
+    margin-bottom: 40px;
+    text-decoration: none;
+    @include bold(15px,22px);
+    @include flex-b;
+    background-color: $card-bg
+  }
+  &__grey {
+    @include greys(14px,19px);
+
+  }
+}
+.total {
+  @include flex-b;
+  &__title {
+    @include bold(12px,18px);
+
+  }
+
+  &__tyext {
+    @include greys(12px,16px);
+    color: $green;
+  }
+
+  &__prise {
+    @include bold(26px,39px);
+    color: $green;
+  }
+}
+
+@include respon(461px){
+  .info__form-block:not(:last-child) {
+    margin-right: 0px;
+ }
+ .dhl::after {
+   background-image: url("");
+ }
+ .fedex::after{
+   background-image: url("");
+ }
+ .form-method__lable{
+   margin-right: 8px;
+ }
+ .info__form-blocks{
+   width: 100%;
+ }
+ .info__form-block{
+   width: 100%;
+ }
+ .form-payment__lable{
+   margin-bottom: 32px;
+   display: block;
+ }
+ .info__form-blocks{
+   flex-direction: column;
+ }
+
+}
+.info__last-text{
+  @include regular-black(14px,19px);
+
+}
+.info__last{
+  background: #FDFDFD;
+  padding-top: 61px;
+  padding-bottom: 61px;  
 }

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/shop-card/shop-card.scss"
+    ],
+    "names": [],
+    "file": "shop-card.css"
+}
